@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { RiMenuLine } from '@remixicon/react';
 import { RiCloseFill } from '@remixicon/react';
 
-const Navbar = () => {
+const Navbar = ({ navReff }) => {
     const [menu, setMenu] = useState(false)
     const menuReff = useRef(null)
 
@@ -26,8 +26,8 @@ const Navbar = () => {
     }, [menu])
 
     return (
-        <div className='flex justify-between items-start md:items-center py-7 border-b border-[#ffffff40] text-[#747474] tracking-tight sticky top-0 backdrop-blur-md bg-black/30 z-50'>
-            <Link to='/' className='hover:text-white text-[1.47rem]'>Adwaid P</Link>
+        <div ref={navReff} className='flex justify-between items-start md:items-center py-7 border-b border-[#ffffff40] text-[#747474] tracking-tight sticky top-0 backdrop-blur-md bg-black/30 z-50'>
+            <Link to='/' className='text-white text-[1.47rem]'>Adwaid P</Link>
             <div className='hidden md:flex gap-14 text-base font-semibold'>
                 <Link to='/projects' className='hover:text-white'>projects</Link>
                 <Link to='/about' className='hover:text-white'>about</Link>
