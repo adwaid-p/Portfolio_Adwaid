@@ -27,7 +27,7 @@ const Loading = () => {
             if (start === 100) {
                 clearInterval(interval);
             }
-        }, 30);
+        }, 25);
 
         return () => clearInterval(interval);
     }, []);

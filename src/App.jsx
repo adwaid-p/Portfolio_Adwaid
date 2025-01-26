@@ -29,7 +29,7 @@ function App() {
 
   return (
     // <div className='bg-[#000000] px-6 md:px-28'>
-    <div>
+    <div >
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
