@@ -1,3 +1,20 @@
 *{
   font-family: "Manrope", serif;
 }
+
+.custom-font{
+  /* font-family: "Kanit", serif; */
+  /* font-family: "Archivo Black", serif; */
+}
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('./fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.monument-font {
+  font-family: 'MonumentExtended', sans-serif !important;
+}
