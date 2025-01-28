@@ -111,7 +111,7 @@ const Home = () => {
           // toggleActions: "pause none reverse none"
           toggleActions: "play reverse play reverse"
         },
-        opacity: 0.2,
+        opacity: 0,
         scale: 0.8,
         
       })
@@ -159,7 +159,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='h-screen flex md:flex-row flex-col md:justify-between md:items-center text-[#a8a8a9] md:mt-10 md:text-3xl text-xl mb-24'>
+          <div className='h-screen flex md:flex-row flex-col md:justify-between md:items-center text-[#a8a8a9] md:mt-10 md:text-[25px] text-lg mb-24'>
             <div className='md:w-1/2 h-full'>
               <h1 className='font-bold mt-24 text-white'>About</h1>
               <p className='mt-12 leading-relaxed about-text text-justify'>
