@@ -5,6 +5,7 @@ import netflixImg from '../assets/netflix1.png'
 import emsImg from '../assets/EMS.png'
 import { useGSAP } from '@gsap/react'
 import gsap, { ScrollTrigger } from 'gsap/all'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
 
@@ -111,7 +112,7 @@ const Projects = () => {
           </div>
 
           <div className='w-full h-[0.5px] bg-[#ffffff40] my-16'></div>
-          <div className='flex flex-col juctify-center h-[50dvh]'>
+          <div className='flex flex-col juctify-center md:h-[50dvh]'>
             {/* <h1 className='text-[#a3a3a3] text-3xl md:text-4xl mb-6 font-semibold'>Contact</h1> */}
             {/* <div className='flex text-[#a3a3a3] text-3xl md:text-4xl mb-6 font-semibold'>contact <div className='bg-red-500 w-full h-1'></div></div> */}
             {/* <div className='bg-red-500 w-full h-1'></div> */}
@@ -120,7 +121,8 @@ const Projects = () => {
               {/* <div className='bg-[#a3a3a3] w-full h-[0.2px]'></div> */}
             </div>
             <h1 className='text-[#a3a3a3] text-3xl md:text-7xl font-semibold mt-10'>Say hello!</h1>
-            <button className='md:w-1/3 w-full border border-[#a3a3a3] px-20 py-3 mt-10 text-xl text-[#a3a3a3] font-semibold hover:bg-white hover:text-black transition-all mx-auto'>Contact</button>
+            {/* <button className='md:w-1/3 w-full border border-[#a3a3a3] px-20 py-3 mt-10 text-xl text-[#a3a3a3] font-semibold hover:bg-white hover:text-black transition-all mx-auto'>Contact</button> */}
+            <Link to={'/contact'} className='md:w-1/3 w-full border border-[#a3a3a3] px-20 py-3 mt-10 text-xl text-[#a3a3a3] font-semibold hover:bg-white hover:text-black transition-all mx-auto text-center'>Contact</Link>
           </div>
         </div>
       </div>

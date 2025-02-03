@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import profileImg from '../assets/profile_color.jpeg'
 import { useGSAP } from '@gsap/react'
 import gsap, { ScrollTrigger } from 'gsap/all'
+import { Link } from 'react-router-dom'
 
 
 const About = () => {
@@ -11,6 +12,7 @@ const About = () => {
   const imageRef = useRef(null)
   const aboutRef = useRef(null)
   const skillsRef = useRef(null)
+  const freelanceRef = useRef(null)
 
   const [currentTime, setCurrentTime] = useState(() => {
     const now = new Date();
@@ -31,9 +33,9 @@ const About = () => {
     gsap.from(imageContainerRef.current, {
       width: '95%',
       duration: 1.5,
-      scrollTrigger:{
+      scrollTrigger: {
         trigger: imageContainerRef.current,
-        scrub:true,
+        scrub: true,
         start: 'top 70%',
         end: 'top 20%',
         // markers: true
@@ -46,9 +48,9 @@ const About = () => {
       duration: 1.5,
       scale: 1.1,
       // y: -50,
-      scrollTrigger:{
+      scrollTrigger: {
         trigger: imageRef.current,
-        scrub:true,
+        scrub: true,
         start: 'top 70%',
         end: 'top 0%',
         // markers: true
@@ -56,13 +58,13 @@ const About = () => {
       ease: 'power3.inOut'
     })
 
-    const refs = [aboutRef, skillsRef]
+    const refs = [aboutRef, freelanceRef, skillsRef]
     refs.forEach((ref) => {
       gsap.from(ref.current, {
         y: 100,
         opacity: 0,
         duration: 1.5,
-        scrollTrigger:{
+        scrollTrigger: {
           trigger: ref.current,
           // scrub:true,
           start: 'top 70%',
@@ -149,12 +151,22 @@ const About = () => {
               </div>
 
               <div className='w-full h-[0.5px] bg-[#ffffff40]'></div>
+              <div ref={freelanceRef} className='flex md:flex-row md:justify-center justify-between items-center gap-6 md:py-24 py-12 px-2 md:px-0'>
+                <div className='flex flex-col md:flex-row md:w-1/2  gap-2'>
+                  <h1 className='text-[#a3a3a3] text-xl'>Freelance</h1>
+                </div>
+                <div className='md:w-1/2 md:text-xl text-lg text-[#a3a3a3]'>
+                  <h1 className='hover:text-white transition-all'>Available</h1>
+                </div>
+              </div>
+              <div className='w-full h-[0.5px] bg-[#ffffff40]'></div>
 
               <div ref={skillsRef} className=' flex flex-col md:flex-row justify-center items-center gap-6 md:py-24 py-12'>
                 <div className='flex flex-col md:flex-row w-full md:w-1/2  gap-2'>
                   <h1 className='text-[#a3a3a3] text-xl'>Programming Languages & Others</h1>
                 </div>
-                <div className='md:w-1/2 md:text-xl text-lg text-[#a3a3a3] flex flex-col md:flex-row'>
+                {/* laptop view skills  */}
+                <div className='md:w-1/2 md:text-xl text-lg text-[#a3a3a3] hidden md:flex flex-col md:flex-row'>
                   <div className='md:w-1/3 flex flex-col justify-start'>
                     <h1 className='hover:text-white transition-all'>-- HTML</h1>
                     <h1 className='hover:text-white transition-all'>-- CSS</h1>
@@ -178,6 +190,29 @@ const About = () => {
                     <h1 className='hover:text-white transition-all'>-- Python</h1>
                   </div>
                 </div>
+                {/* mobile view skills  */}
+                <div className='w-full text-lg text-[#a3a3a3] md:hidden flex justify-between px-2 mt-5'>
+                  <div className='flex flex-col justify-start'>
+                    <h1 className='hover:text-white transition-all'>-- HTML</h1>
+                    <h1 className='hover:text-white transition-all'>-- CSS</h1>
+                    <h1 className='hover:text-white transition-all'>-- JavaScript</h1>
+                    <h1 className='hover:text-white transition-all'>-- Tailwind CSS</h1>
+                    <h1 className='hover:text-white transition-all'>-- Bootstrap</h1>
+                    <h1 className='hover:text-white transition-all'>-- React</h1>
+                    <h1 className='hover:text-white transition-all'>-- Node.js</h1>
+                    <h1 className='hover:text-white transition-all'>-- Express.js</h1>
+                  </div>
+                  <div className='flex flex-col justify-start'>
+                    <h1 className='hover:text-white transition-all'>-- MongoDB</h1>
+                    <h1 className='hover:text-white transition-all'>-- GSAP</h1>
+                    <h1 className='hover:text-white transition-all'>-- Lenis</h1>
+                    <h1 className='hover:text-white transition-all'>-- Firebase</h1>
+                    <h1 className='hover:text-white transition-all'>-- Cloudinary</h1>
+                    <h1 className='hover:text-white transition-all'>-- Figma</h1>
+                    <h1 className='hover:text-white transition-all'>-- Git</h1>
+                    <h1 className='hover:text-white transition-all'>-- Python</h1>
+                  </div>
+                </div>
               </div>
 
               <div className='w-full h-[0.5px] bg-[#ffffff40]'></div>
@@ -185,7 +220,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='flex flex-col jcenter mt-10 h-[50dvh]'>
+          <div className='flex flex-col jcenter mt-10 md:h-[50dvh] py-10'>
             {/* <h1 className='text-[#a3a3a3] text-3xl md:text-4xl mb-6 font-semibold'>Contact</h1> */}
             {/* <div className='flex text-[#a3a3a3] text-3xl md:text-4xl mb-6 font-semibold'>contact <div className='bg-red-500 w-full h-1'></div></div> */}
             {/* <div className='bg-red-500 w-full h-1'></div> */}
@@ -194,7 +229,7 @@ const About = () => {
               {/* <div className='bg-[#a3a3a3] w-full h-[0.2px]'></div> */}
             </div>
             <h1 className='text-[#a3a3a3] text-3xl md:text-7xl font-semibold mt-10'>Say hello!</h1>
-            <button className='md:w-1/3 w-full border border-[#a3a3a3] px-20 py-3 mt-10 text-xl text-[#a3a3a3] font-semibold hover:bg-white hover:text-black transition-all mx-auto'>Contact</button>
+            <Link to={'/contact'} className='md:w-1/3 w-full border border-[#a3a3a3] px-20 py-3 mt-10 text-xl text-[#a3a3a3] font-semibold hover:bg-white hover:text-black transition-all mx-auto text-center'>Contact</Link >
           </div>
 
         </div>
