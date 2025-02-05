@@ -6,7 +6,7 @@ import { Link, Route, Routes } from 'react-router-dom'
 import Projects from './Pages/Projects'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
-import Linkedin from './Pages/linkedin'
+// import Linkedin from './Pages/linkedin'
 
 function App() {
 
@@ -35,7 +35,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/linkedin' element={<Linkedin />} />
+        {/* <Route path='/linkedin' element={<Linkedin />} /> */}
       </Routes>
     </div>
   )

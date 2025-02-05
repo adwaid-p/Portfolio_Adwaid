@@ -13,6 +13,7 @@ import SplitType from 'split-type';
 import uberImg from '../assets/uber_laptop.avif'
 import netflixImg from '../assets/netflix1.png'
 import emsImg from '../assets/EMS.png'
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
@@ -23,6 +24,8 @@ const Home = () => {
   const profileImageReff = useRef(null);
 
   const [loading, setLoading] = useState(true)
+
+  const navigate = useNavigate()
 
   const [currentTime, setCurrentTime] = useState(() => {
     const now = new Date();
@@ -265,10 +268,10 @@ const Home = () => {
           </div> */}
 
           <div ref={projectsReff} className='text-[1.6rem] md:text-7xl text-[#a8a8a9] font-semibold'>
-            <div className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>01</span>Uber Clone </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
-            <div className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>02</span>Emp Manage </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
-            <div className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>03</span>Google Drive Clone </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
-            <div className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>04</span>Netflix </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
+            <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>01</span>Uber Clone </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
+            <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>02</span>Emp Manage </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
+            <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>03</span>Google Drive Clone </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
+            <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>04</span>Netflix </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
           </div>
 
           {/* <div>

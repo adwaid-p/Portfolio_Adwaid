@@ -71,7 +71,7 @@ const Projects = () => {
                   <br />
                   The app ensures a smooth user experience with responsive design and interactive elements, making ride booking effortless on any device.
                 </p>
-                <button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button>
+                <Link to={'https://github.com/adwaid-p/Uber'} target='_blank'><button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button></Link>
               </div>
               <div className='hidden md:inline-block md:w-1/2'>
                 <img className='w-[90%]' src={uberImg} alt="" />
@@ -90,7 +90,7 @@ const Projects = () => {
                 <p className='text-lg'>
                   A feature-rich Netflix clone built with React for the frontend and Firebase for the backend. This project replicates the core functionalities of Netflix, offering an engaging and intuitive user experience. Users can browse movies and TV shows by genre, view detailed information, and bookmark their favorites securely. The responsive design ensures seamless viewing across all devices, while Firebase handles authentication and real-time data updates efficiently.
                 </p>
-                <button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button>
+                <Link to={'https://github.com/adwaid-p/Netflix_Clone'} target='_blank'><button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button></Link>
               </div>
             </div>
 
@@ -103,7 +103,7 @@ const Projects = () => {
                 <p className='text-lg'>
                   WorkFlow is a comprehensive employee management system built using the MERN stack, designed to streamline HR operations and improve organizational efficiency. It offers features such as employee record management, attendance tracking, role-based access, and performance monitoring. With a user-friendly interface and secure authentication, WorkFlow helps businesses manage their workforce efficiently while ensuring data security and accessibility from any device.
                 </p>
-                <button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button>
+                <Link to={'https://github.com/adwaid-p/EMS'} target='_blank'><button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button></Link>
               </div>
               <div className='hidden md:inline-block md:w-1/2'>
                 <img className='w-[90%]' src={emsImg} alt="" />
