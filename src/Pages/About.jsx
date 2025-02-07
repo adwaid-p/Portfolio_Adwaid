@@ -176,6 +176,7 @@ const About = () => {
                     <h1 className='hover:text-white transition-all'>-- React</h1>
                   </div>
                   <div className='md:w-1/3 flex flex-col justify-start'>
+                    {/* <h1 className='hover:text-white transition-all'>-- React</h1> */}
                     <h1 className='hover:text-white transition-all'>-- Node.js</h1>
                     <h1 className='hover:text-white transition-all'>-- Express.js</h1>
                     <h1 className='hover:text-white transition-all'>-- MongoDB</h1>
@@ -185,8 +186,8 @@ const About = () => {
                   <div className='md:w-1/3 flex flex-col justify-start'>
                     <h1 className='hover:text-white transition-all'>-- Firebase</h1>
                     <h1 className='hover:text-white transition-all'>-- Cloudinary</h1>
-                    <h1 className='hover:text-white transition-all'>-- Figma</h1>
-                    <h1 className='hover:text-white transition-all'>-- Git</h1>
+                    {/* <h1 className='hover:text-white transition-all'>-- Figma</h1> */}
+                    {/* <h1 className='hover:text-white transition-all'>-- Git</h1> */}
                     <h1 className='hover:text-white transition-all'>-- Python</h1>
                   </div>
                 </div>
@@ -208,8 +209,8 @@ const About = () => {
                     <h1 className='hover:text-white transition-all'>-- Lenis</h1>
                     <h1 className='hover:text-white transition-all'>-- Firebase</h1>
                     <h1 className='hover:text-white transition-all'>-- Cloudinary</h1>
-                    <h1 className='hover:text-white transition-all'>-- Figma</h1>
-                    <h1 className='hover:text-white transition-all'>-- Git</h1>
+                    {/* <h1 className='hover:text-white transition-all'>-- Figma</h1>
+                    <h1 className='hover:text-white transition-all'>-- Git</h1> */}
                     <h1 className='hover:text-white transition-all'>-- Python</h1>
                   </div>
                 </div>
