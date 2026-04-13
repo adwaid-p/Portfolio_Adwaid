@@ -271,6 +271,7 @@ const Home = () => {
             <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>01</span>Uber Clone </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
             <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>02</span>Emp Manage </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
             <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>03</span>Netflix </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
+            <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>04</span> Chat App </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div>
             {/* <div onClick={()=> navigate('/projects')} className='border-y border-[#a8a8a5] py-7 flex justify-between items-center'><span><span className='text-red-600 mr-6'>04</span>Google Drive Clone </span><i className="ri-arrow-right-up-line  text-5xl md:text-8xl font-semibold"></i></div> */}
           </div>
 

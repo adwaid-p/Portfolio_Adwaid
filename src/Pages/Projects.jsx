@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import uberImg from '../assets/UberImage.webp'
 import netflixImg from '../assets/netflix1.png'
 import emsImg from '../assets/EMS.png'
+import chatImg from '../assets/ChatApp.png'
 import { useGSAP } from '@gsap/react'
 import gsap, { ScrollTrigger } from 'gsap/all'
 import { Link } from 'react-router-dom'
@@ -109,6 +110,25 @@ const Projects = () => {
                 <img className='w-[90%]' src={emsImg} alt="" />
               </div>
             </div>
+
+
+            <div ref={projectReff2} className='flex flex-col md:flex-row items-center justify-between gap-20'>
+              <div className='hidden md:inline-block md:w-1/2'>
+                <img className='w-[90%]' src={chatImg} alt="" />
+              </div>
+              <div className='md:w-1/2 text-[#a3a3a3]'>
+                <h1 className='text-[#a3a3a3] text-3xl md:text-4xl mb-6 font-semibold'>04.Chat App</h1>
+                <div className='inline-block md:hidden md:w-1/2 mb-10 mt-2'>
+                  <img className='w-[130%]' src={chatImg} alt="" />
+                </div>
+                <p className='text-lg'>
+                  A full-stack real-time chat application designed to deliver seamless and interactive communication experiences. Built using the MERN stack with WebSocket-based real-time updates, it supports one-to-one and group messaging, typing indicators, and message delivery status.
+                  The application focuses on performance, scalability, and responsive design, ensuring smooth and engaging communication across all devices.
+                </p>
+                <Link to={'https://github.com/adwaid-p/Chat.git'} target='_blank'><button className=' border border-[#a3a3a3] px-20 py-3 text-xl font-semibold mt-10 hover:bg-white hover:text-black transition-all'>See More</button></Link>
+              </div>
+            </div>
+
           </div>
 
           <div className='w-full h-[0.5px] bg-[#ffffff40] my-16'></div>
